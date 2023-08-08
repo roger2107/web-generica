@@ -377,3 +377,45 @@ p, a, li {
 .logo-footer{
     width: 20rem;
 }
+
+
+/* SECCION NOSOTROS */
+
+.contenido-principal-nosotros{
+    height: 50rem;
+    overflow: hidden;
+}
+
+.contenido-main-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+ .imagen-nosotros{
+    height: 60rem;
+ }
+
+ .nosotros-titulo{
+    font-size: 5rem;
+ }
+
+ .nosotros-texto{
+    background-color: var(--oscuro);
+    color: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+
+.parrafo-nosotros{
+    font-size: 1.8rem;
+    border-left: solid 2px var(--blanco);
+    padding-left: 2rem;
+}
+
+.contenedor-soluciones_valores{
+    
+    grid-template-columns: repeat(3, 1fr);
+}
