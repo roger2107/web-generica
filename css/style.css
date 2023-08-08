@@ -419,3 +419,59 @@ p, a, li {
     
     grid-template-columns: repeat(3, 1fr);
 }
+
+
+/* SECCION SERVICIOS */
+
+.servicios{
+    background-color: var(--medio);
+}
+
+.contenido-servicios{
+    color: var(--blanco);
+    padding: 3rem 5rem 2rem 5rem ;
+}
+
+.servicios-titulo{
+    font-size: 5rem ;
+}
+
+.servicios-texto{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.contendor-servicios{
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.servicio--imagen{
+    width: 100%;
+}
+
+
+.servicio--info{
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    padding: 1rem;
+}
+
+.servicio--titulo{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.servicio--descripcion{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
