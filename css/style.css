@@ -281,7 +281,7 @@ p, a, li {
     background-image: url('../img/contacto.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .contacto-fondo{
@@ -474,4 +474,71 @@ p, a, li {
 .servicio--descripcion{
     font-size: 1.8rem;
     font-weight: 300;
+}
+
+/* Contacto */
+
+.contenido-principal__contacto{
+    background-image: url('../img/contacto.jpg');
+}
+
+.contenido-hero__contacto{
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-contacto__contacto{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+    background-image: none;
+    background-color: var(--blanco);
+    height: auto;
+}
+
+.contacto-fondo__contacto{
+    background-color: var(--blanco);
+    height: auto;
+    
+}
+
+.contenedor-contacto__contacto{
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+/* Formulario */
+legend{
+    font-family: var(--fuente-principal);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+input, textarea{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: solid 1px var(--claro);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: var(--fuente-secundaria);
+    
+}
+
+textarea{
+    height: 10rem;
+}
+
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+}
+.formulario{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.formulario-campos{
+    display: flex;
+    flex-direction: column;
 }
