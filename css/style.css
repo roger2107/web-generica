@@ -387,12 +387,24 @@ p, a, li {
 }
 
 .contenido-main-nosotros{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
 }
- .imagen-nosotros{
-    height: 60rem;
+.imagen-nosotros{
+    height: 30rem;
+    width: 100%;
  }
+@media(min-width: 768px){
+    .contenido-main-nosotros{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .imagen-nosotros{
+        height: 60rem;
+     }
+}
+ 
 
  .nosotros-titulo{
     font-size: 5rem;
@@ -413,6 +425,8 @@ p, a, li {
     font-size: 1.8rem;
     border-left: solid 2px var(--blanco);
     padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .contenedor-soluciones_valores{
@@ -444,15 +458,22 @@ p, a, li {
 
 .contendor-servicios{
     margin: 2rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width: 768px){
+    .contendor-servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 
 .servicio{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 
 .servicio--imagen{
